@@ -23,9 +23,9 @@ python main.py --polish
 
 ### Why this architecture?
 
-A bedtime story is a **sleep aid** read aloud by a tired parent — not a thriller. The entire system is designed around three principles:
+A bedtime story is a **sleep aid** read aloud by a tired parent, not a thriller. The entire system is designed around three principles:
 
-1. **Safety first ("do no harm")**: Nothing scary, violent, sad-without-resolution, or age-inappropriate ever reaches the child. This is enforced as a hard gate at two levels — the intake guardrail rejects unsafe *requests*, and the judge's blocker tier catches unsafe *outputs*.
+1. **Safety first ("do no harm")**: Nothing scary, violent, sad-without-resolution, or age-inappropriate ever reaches the child. This is enforced as a hard gate at two levels, the intake guardrail rejects unsafe *requests*, and the judge's blocker tier catches unsafe *outputs*.
 
 2. **Calming ("descending") arc**: Stories follow a 4-beat structure where emotional energy *decreases* in the final third. The arc planner explicitly avoids high-tension climaxes and builds in a drowsy wind-down.
 
