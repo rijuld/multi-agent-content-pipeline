@@ -97,4 +97,5 @@ Polish complete — final score: 4.8
 
 1. **Fine-tuned reading-level scorer** — Replace the LLM-based reading-level blocker with a lightweight classifier (e.g., distilBERT fine-tuned on leveled-reader corpora). Faster, cheaper, and more accurate than asking gpt-3.5 to self-assess vocabulary complexity.
 
-2. **Text-to-speech narration** — Integrate the OpenAI TTS API (`tts-1` model) with a slow, soft "sleepy" voice preset (`alloy` at 0.8x speed) to actually read the story aloud. A bedtime story that reads itself would be the killer feature for exhausted parents.
+2. A multi-judge consensus system that runs the judge agent 3 times
+per evaluation and takes the median scores, reducing single-call scoring variance that can cause good stories to be needlessly revised or borderline stories to slip through paired with deterministic readability metrics (Flesch-Kincaid grade level, average sentence length) as hard-coded guardrails that don't depend on LLM judgment at all.
