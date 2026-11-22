@@ -99,3 +99,7 @@ Polish complete — final score: 4.8
 
 2. A multi-judge consensus system that runs the judge agent 3 times
 per evaluation and takes the median scores, reducing single-call scoring variance that can cause good stories to be needlessly revised or borderline stories to slip through paired with deterministic readability metrics (Flesch-Kincaid grade level, average sentence length) as hard-coded guardrails that don't depend on LLM judgment at all.
+
+## License
+
+[MIT](LICENSE) © Rijul Dahiya
